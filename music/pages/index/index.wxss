@@ -1,0 +1,69 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/*轮播图*/
+.b image{
+	width: 100%;/*轮播图铺满*/
+}
+.m .h{
+  padding:40rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  letter-spacing: 4rpx;
+   background: #ffc64b;
+}
+.ms{
+	padding: 20rpx;
+  overflow: hidden;
+  background: #d3b17d;
+  border-bottom: 6rpx solid #ffc64b;
+}
+.pic image{
+	width: 110px;
+	height: 120px;
+}
+.pic,.info{
+	float: left;	
+}
+.play{
+	float: right;
+}
+.play image{
+	width: 40px;
+	height: 40px;
+}
+.info,.play{
+	padding-left: 20p;
+	padding-top: 40px;
+}
+.info .name{
+  font-size: 40rpx;
+  font-weight: bold;
+  letter-spacing: 4rpx;
+  margin-bottom: 10rpx;
+}
+.info .alname{
+	font-size: 26rpx;
+	color: #666;
+  
+
+}

@@ -1,0 +1,41 @@
+/* pages/detail/detail.wxss */
+.index{
+   padding:8% 5%; 
+   background:#eee;
+    color: #999;
+}
+.name{
+  font-size: 35px;
+  margin: 10px;
+
+}
+.address{
+  margin: 10px;
+}
+.de{
+      text-indent: 60rpx;    
+		  text-align: left;
+}
+.detail{
+      text-indent: 60rpx;    
+		  text-align: left;
+}
+.x{
+  height: 300px;
+  width: 100%;
+}
+.p{
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  
+  height: 27px;
+  width:100%;
+}
+
+.imagx{
+  height: 90px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}

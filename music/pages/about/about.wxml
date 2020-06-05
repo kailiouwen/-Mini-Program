@@ -1,0 +1,5 @@
+<view class="aboutme">
+  <view class="about">
+    <text>产品名称：音乐播放器</text>
+  </view>
+</view>

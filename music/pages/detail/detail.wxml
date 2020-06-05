@@ -1,0 +1,14 @@
+<view class="index">
+<text class="name">陈柯宇</text>
+<image src="/images/name1.png" mode="aspectFill" class="x"></image>
+<view class="address"><text>1990年11月14日    江苏省苏州市    中国</text></view>
+<view class="de">陈柯宇，1990年11月14日出生于江苏省苏州市，中国内地流行乐男歌手，毕业于四川音乐学院通俗演唱专业。</view>
+<view class="detail">2015年，推出首张个人音乐EP《正·反面》，从而正式进入演艺圈。2016年，推出首张个人音乐专辑《真 · 套路》。2017年，推出个人原创单曲《生僻字》，并于2018年12月在抖音上传了自己演唱该歌曲的视频，从而获得了一定的关注度。5月6日，其参演的古装武侠喜剧《导演对我下手了》首播。 </view>
+<view class="p">代表作品</view>
+<view class="imagx">
+<image mode="center" src="/images/represent1.jpg"></image>
+<image mode="center" src="/images/represent2.png"></image>
+<image mode="center" src="/images/represent3.png"></image>
+<image mode="center" src="/images/represent4.jpg"></image>
+</view>
+</view>

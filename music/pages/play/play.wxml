@@ -1,0 +1,40 @@
+<!--pages/play/play.wxml-->
+<view class="contain">
+<view class="header">
+	<!-- {{music.name}}绑定歌曲名 -->
+<view class="name">{{music.name}}</view>
+<!-- 绑定歌手名和专辑-->
+<view class="alname"><navigator url="/pages/detail/detail">{{music.artists}}</navigator>{{music.albumname}}</view>
+</view>
+<!-- mode = aspectFill 让图片按比例响应式缩放、并自动裁剪的css -->
+<image class="bgimg" mode="aspectFill" src="{{music.picUrl}}"></image>
+<!-- src="{{music.picUrl}绑定歌手图片 -->
+<image class="circleImg" mode="aspectFill" src="{{music.picUrl}}"
+ style="transform:rotate({{deg}}deg)"></image>
+ <!--transform:rotate({{deg}}deg)绑定变量 -->
+<!-- id获取上下文对象 --><!-- src绑定音乐歌曲 --><!-- bindtimeupdate="timeupdate"绑定时长方法--><!--bindended="ended"播放完毕跳转到下一首  -->
+<audio  id="MA"  src="{{music.mp3Url}}" bindtimeupdate="timeupdate" bindended="ended"></audio>
+
+
+<view class="footer">
+<view class="progress">
+	<!-- {{showCur}}绑定进度时间 -->
+<text>{{showCur}}</text>
+<!-- percent="{{perc}}"绑定进度条长度 -->
+<progress percent="{{perc}}" backgroundColor="#fff" stroke-width="5" activeColor="#0ff"></progress>
+<!-- {{showDur}}绑定总时长 -->
+<text>{{showDur}}</text>
+</view>
+
+<view class="control">
+	<!-- bindtap绑定方法 -->
+<image class="mode" mode="aspectFill" bindtap="switchModeEvent" src="../../images/{{mode}}.png" />
+<image bindtap="playPrev" src="../../images/prev.png"></image>
+<image bindtap="ctrlPlay" src="../../images/{{statusBtn}}.png"></image>
+<image bindtap="playNext" src="../../images/next.png"></image>
+<button class="fav" bindtap="onShareAppMessage" open-type="share">
+<image src="../../images/share.png" class="share" ></image>
+ </button>
+</view>
+</view>
+</view>

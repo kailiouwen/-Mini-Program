@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<!--
+1.js服务器请求
+2.wxmlswiper标签结构
+3.css样式
+-->
+<view>
+	<!--swiper属性名“b” css宽度为100  依次显示面板指示点，自动滑动，自动滑动间隔2000毫秒，采用斜接滑动-->
+	<swiper class="b" indicator-dots="ture" autoplay="ture" interval="2000" circular="ture">
+		<!--迭代js中服务器数据数组imgUrls,swiperImg是迭代后保存的变量-->
+		<!--动态更改图片效率高，服务器传数据-->
+		<swiper-item wx:for="{{imgUrls}}" wx:for-item="swiperImg" wx:key="swiper">
+			<!--迭代后的变量名赋给src,打印出图片-->
+			<image src="{{swiperImg}}"></image>
+		</swiper-item>
+	</swiper>
+	</view>
+	
+	<view class="m">
+		<view class="h">推荐歌曲</view>
+		
+<block wx:for="{{muscis}}" wx:for-item="ms" wx:key="musics">
+
+		<view class="ms" bindtap="navTo" data-index="{{index}}">
+			<view class="pic">
+				<image src="{{ms.picUrl}}" mode="aspectFill"></image>
+			</view>
+			<view class="info">
+				<view class="name">{{ms.name}}</view>
+				<view class="alname">{{ms.artists}}-{{ms.albumname}}</view>
+			</view>
+		
+		<view class="play">
+			<image src="../../images/more.png"></image>
+		</view>
+		</view>
+    </block>
+		</view>
+	
